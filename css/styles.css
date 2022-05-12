@@ -9,7 +9,7 @@
 --hero-footer-bg: #2F303A;}
 /* outline: 2px solid tomato; */
 html {box-sizing: border-box;
-max-width: 1600px;}
+}
 *,
 *::before,
 *::after {box-sizing: inherit;}
@@ -28,6 +28,7 @@ li {list-style: none;}
 padding-bottom: 94px;
 }
 .container{width: 1200px;
+max-width: 1600px;
 padding-left: 15px;
 padding-right: 15px;
 margin: 0 auto;
@@ -108,9 +109,7 @@ text-decoration: none;}
 /* <-----Main content-------> */
 
 /* <-------Hero section------> */
-.hero.section{padding-top: 0;
-padding-bottom: 0;
-background-color: var(--hero-footer-bg);}
+.hero.section{background-color: var(--hero-footer-bg);}
 .main.container{text-align: center;}
 .hero-text{margin: 0 auto;
 padding-top: 200px;
@@ -125,7 +124,7 @@ letter-spacing: 0.06em;
 text-transform: uppercase;}
 /* button order*/
 .button {padding: 10px 32px;
-margin-bottom: 200px;
+margin-bottom: 106px;
 text-align: center;
 font-weight: 700;
 font-size: 16px;
@@ -146,9 +145,6 @@ color: var(--hero-text); cursor: pointer;}
 .feature-list{display:flex;
 justify-content: space-between;}
 
-/* .feature-list>.feature-item:not(:last-child) 
-{padding-right: 30px;} */
-
 /* Feature item content */
 .feature-item{width: 270px;}
 .title{ padding-bottom: 10px;
@@ -165,7 +161,7 @@ letter-spacing: 0.03em;
 color:var(--secondary-text);}
 
 /* <--What-we-do Project section--> */
-.project.section{padding-top: 0;}
+
 .section-title, .team-title {
 font-weight: 700;
 font-size: 36px;
@@ -176,14 +172,9 @@ color: var(--title);}
 .project-list{display: flex;
 justify-content: space-between;
 padding-top: 50px;}
-/* .project-list>.project-item:not(:last-child) 
-{margin-right: 30px;} */
 
 /*-------- Our team section ---------- */
-.team.section {padding-top: 0;
-padding-bottom: 94px;
-background-color: var(--button-color);}
-
+.team.section {background-color: var(--button-color);}
 .team-title{padding-top: 94px;}
 .team-list{padding-top: 50px;
 display: flex;
