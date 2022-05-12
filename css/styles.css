@@ -174,21 +174,21 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--title);}
 .project-list{display: flex;
-        justify-content: space-between;
+justify-content: space-between;
 padding-top: 50px;}
 /* .project-list>.project-item:not(:last-child) 
 {margin-right: 30px;} */
 
 /*-------- Our team section ---------- */
 .team.section {padding-top: 0;
-padding-bottom: 0;
+padding-bottom: 94px;
 background-color: var(--button-color);}
 
 .team-title{padding-top: 94px;}
 .team-list{padding-top: 50px;
 display: flex;
 justify-content: space-between;}
-.team-item{margin-bottom: 94px;
+.team-item{
 background-color: var(--background-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
 0px 1px 1px rgba(0, 0, 0, 0.14), 
