@@ -174,9 +174,10 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--title);}
 .project-list{display: flex;
+        justify-content: space-between;
 padding-top: 50px;}
-.project-list>.project-item:not(:last-child) 
-{margin-right: 30px;}
+/* .project-list>.project-item:not(:last-child) 
+{margin-right: 30px;} */
 
 /*-------- Our team section ---------- */
 .team.section {padding-top: 0;
