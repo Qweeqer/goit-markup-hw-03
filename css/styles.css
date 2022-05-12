@@ -17,21 +17,36 @@ font-family: 'Roboto', sans-serif;
 background-color: var(--background-color);
 color: var(--text-color);
 }
-h1,h2,h3,h4,h5,h6,p,ul{
-margin-top: 0;
-margin-bottom: 0;
+h1,h2,h3,h4,h5,h6,p{
+margin: 0;}
+ul{margin: 0;
 padding-left: 0;}
+img {display: block;}
 li {list-style: none;}
+.section {padding-top: 94px;
+padding-bottom: 94px;}
 .container{width: 1200px;
 padding-left: 15px;
 padding-right: 15px;
+margin: 0 auto;
 /* cheking container border */
 outline: 2px solid tomato;
 }
+.visually-hidden {
+position: absolute;
+white-space: nowrap;
+width: 1px;
+height: 1px;
+overflow: hidden;
+border: 0;
+padding: 0;
+clip: rect(0 0 0 0);
+clip-path: inset(50%);
+margin: -1px;
+}
 /* <--Header--> */
-.header{max-width: 1600px; }
-.header.container {display: flex;
-background-color: var(--background-color);}
+.header{background-color: var(--background-color);}
+.head.container {display: flex;}
 .header-nav{display: flex;
 align-items: center;
 justify-content: flex-start;}
@@ -87,18 +102,19 @@ color: var(--secondary-text);
 text-decoration: none;}
 
 /* <--Main content--> */
-.section{padding-top: 94px;
-padding-bottom: 94px;}
+
 
 /* <--Hero section--> */
-.hero.section{padding-top: 0;}
-.hero.container{
+.hero.section{padding-top: 0;
+padding-bottom: 0;}
+.main.container{
 background-color: var(--hero-footer-bg);
 text-align: center;}
-.hero-text{text-align: center;
+.hero-text{margin: 0 auto;
 padding-top: 200px;
 padding-bottom: 30px;
-
+width: 696px;
+text-align: center;
 color: var(--button-color);
 font-weight: 900;
 font-size: 44px;
@@ -107,6 +123,8 @@ letter-spacing: 0.06em;
 text-transform: uppercase;}
 /* button order*/
 .button {
+        /* margin: 0 auto;
+        display: block; */
 padding: 10px 32px;
 margin-bottom: 200px;
 text-align: center;
@@ -127,13 +145,12 @@ background-color: var(--brand-color);
 color: var(--hero-text); cursor: pointer;}
 
 /* Feature */
-.hiden {opacity: 0;}
-.feature.section{padding-top: 0px;}
 .feature-list{display:flex;}
 .feature-list>.feature-item:not(:last-child) 
 {margin-right: 30px;}
 /* Feature text */
-.feature-item{width: 270px;}
+.feature-item{width: 270px;
+}
 .title{ padding-bottom: 10px;
 font-family: 'Roboto';
 font-weight: 700;
@@ -167,10 +184,10 @@ padding-bottom: 0;}
 .team.container {background-color: var(--button-color);}
 .team-title{padding-top: 94px;}
 .team-list{display: flex;
+justify-content: space-between;
 padding-top: 50px;}
-.team-list>.team-item:not(:last-child) 
-{margin-right: 30px;}
-.team-item{margin-bottom: 94px;
+.team-item{
+margin-bottom: 94px;
 background-color: var(--background-color);
 box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
 0px 1px 1px rgba(0, 0, 0, 0.14), 
@@ -243,23 +260,27 @@ border-bottom-style: solid;
 border-bottom-color: #ECECEC;
 }
 /* filters */
-.filter {display: inline-block;
-padding-bottom: 34px;
-margin-top: 90px;
-text-align: center;
+.filter {margin: 0 auto;
+margin-bottom: 50px;
+display: flex;
+justify-content: space-between;
+
+max-width: 611px;
+
 }
-.filter .filter-button,
+
+/* .filter>.filter-item:not(:last-child) 
+{padding-right: 8px;} */
+.filter-button,
 .current-button {
 font-family: inherit;
 font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
-letter-spacing: 0.03em;
-}
+letter-spacing: 0.03em;}
 .current-button,
 .filter-button {
 background: var(--button-color);
-display: inline-block;
 padding: 6px 22px;
 text-align: center;
 box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
@@ -282,15 +303,26 @@ cursor: pointer;
 }
 
 /* portfolio-list */
-.portfolio-list{padding-bottom: 90px;}
+.portfolio-list{
+display: flex;
+flex-wrap: wrap;}
+.portfolio-list>.portfolio-item:not(:last-child) {
+margin-right: 30px;
+margin-bottom: 30px;}
+.portfolio-list>.portfolio-item:nth-child(3n+3) {
+margin-right: 0px;}
+.portfolio-list>.portfolio-item:nth-child(n+7){margin-bottom: 0px;}
+.portfolio-description{border: 1px solid #EEEEEE;}
 .portfolio-item{
 display: inline-block;
 background: #FFFFFF;
 border: 1px solid #EEEEEE;
+border:transparent;
 box-sizing: border-box;
 }
-.portfolio-img{padding-bottom: 20px;}
-.portfolio-title {padding-bottom: 4px;
+
+.portfolio-title {padding-top: 20px;
+padding-bottom: 4px;
 font-weight: 700;
 font-size: 18px;
 line-height: 2.0;
