@@ -25,12 +25,15 @@ li {list-style: none;}
 .section {padding-top: 94px;
 padding-bottom: 94px;
 margin: 0 auto;
-outline: 2px solid green;}
+/* cheking section border */
+/* outline: 2px solid green; */
+}
 .container {width: 1200px;
 padding: 0 15px;
 margin: 0 auto;
 /* cheking container border */
-outline: 2px solid tomato;}
+/* outline: 2px solid tomato; */
+}
 
 .visually-hidden {position: absolute;
 white-space: nowrap;
